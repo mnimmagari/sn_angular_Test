@@ -1,0 +1,73 @@
+<!doctype html>
+<html ng-app="project">
+<head>
+    <title>AngularJS</title>
+    <base href="/" />
+    <!-- styles -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap.min.css"
+          integrity="sha256-EcdK7VCRHVTARFX+HZwE9CxfbPQ4qUl2+JDyXypZ9pk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+    <!-- scripts -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular.min.js"
+            integrity="sha256-dCC0CIHS73s9HS7yznCTJPdV4goXc3QYMp5qqorMxJE=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular-resource.min.js"
+            integrity="sha256-YdF72aE8dlV9riziRI06oyb5zRlmdUIVmezvSE0PZko=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular-route.min.js"
+            integrity="sha256-rrq6uPIqOAbDQRQyqOhLEeA+FJujc7HhflEj0J6wL04=" crossorigin="anonymous"></script>
+
+
+</head>
+<body style="width:100%;margin:auto;">
+<div id="content" style="padding:5px;background-color:#efefef;">
+    <div>
+        <h2>AngularJS - JavaScript Projects</h2>
+        <div ng-view></div>
+    </div>
+    <p>
+    <div>
+        <b>The Ask</b>
+        <ol>
+            <li> Add a new field to the model called author
+                <ul style="color: #428bca">
+                    <li>Added Author to model </li>
+                    <li> Able to add, Edit </li>
+                </ul>
+            <li> Add a new field to the model called file size
+                <ul style="color: #428bca">
+                    <li>Added file size to model </li>
+                    <li> Able to add, Edit (showing static data in table)</li>
+                </ul>
+            <li> Add a new field to the model called creation date
+                <ul style="color: #428bca">
+                    <li>Added created date to model </li>
+                    <li>Date gets added directly while saving a new project</li>
+                </ul>
+            <li> Make the column headings clickable and clicking them should cycle
+                through sorting by ascending, descending and no order
+                <ul style="color: #428bca">
+                    <li>Sorting feature enabled</li>
+                    <li>Ascending/Descending happens on click of the Column Header</li>
+                </ul>
+            <li> Add a search row below the heading row, each column contains a search
+                field. Entering a value in the search field should filter data only based on
+                values in that column (unlike the search above the table which filters
+                based on data in any field)
+                <ul style="color: #428bca">
+                    <li>On click of Advanced Search button. Filters row, which filters data column wise shows up. </li>
+                </ul>
+            <li> Add another action next to the pencil icon on each row to delete the
+                record
+                <ul style="color: #428bca">
+                    <li>Beside pencil button, trash button added onclick which deletes a record</li>
+                </ul>
+        </ol>
+    </div>
+</div>
+
+<!-- application scripts -->
+<script src="./project.js"></script>
+
+</body>
+</html>

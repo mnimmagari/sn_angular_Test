@@ -1,0 +1,14 @@
+{
+  "name": "sn_angularjs_test",
+  "version": "1.0.0",
+  "description": "Sample angularjs skill test project.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "servicenow.com",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}
